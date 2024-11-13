@@ -1,0 +1,19 @@
+.btn:disabled{
+    background-color: #b39ddb !important;
+    color: white !important;
+}
+
+.fixedContainer{
+    position: relative;
+}
+
+.capitalized{
+    text-transform:capitalize !important;
+}
+
+.rounded{
+    border-radius: 1.3rem;
+}
+#cardsContainer{
+    padding-top: 2rem;
+}

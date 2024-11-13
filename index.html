@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Poke App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/980cd75476.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+  <body class="deep-purple lighten-1">
+    <header class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper purple darken-4">
+               <a href="#" class="brand-logo">My Poke App</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="row fixedContainer card-panel deep-purple lighten-1">
+            <form id="fmSearchBy" method="get">
+                <div class="col s12">
+                    <input id="inpPokeSearch" type="search" class="white-text" placeholder="Pokemon name">
+                </div>
+            </form>
+        </section>
+        <section id="navigationContainer" class="row fixedContainer">
+            <button type="button" class="btn col s6 purple darken-4 waves-effect waves-block waves-white" id="btnPrev" data-url="" onclick="loadData(this)"><span class="fa fa-chevron-left"></span></button>
+            <button type="button" class="btn col s6 purple darken-4 waves-effect waves-block waves-white" id="btnNext" data-url="" onclick="loadData(this)"><span class="fa fa-chevron-right"></span></button>
+        </section>
+        <section class="row" id="cardsContainer">
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
